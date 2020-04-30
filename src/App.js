@@ -4,7 +4,7 @@ import {Banner} from './Banner/Banner';
 import {Menu} from "./Menu/Menu"
 import {GlobalStyle} from './Styles/GlobalStyle';
 import {FoodDialog} from './FoodDialog/FoodDialog';
-
+import {Order} from './Order/Order'
 
 function App() {
 const [openFood, setOpenFood] = useState();
@@ -14,6 +14,7 @@ const [openFood, setOpenFood] = useState();
     <GlobalStyle />
     <FoodDialog openFood={openFood} setOpenFood={setOpenFood}/>
     <Navbar />
+    <Order />
     <Banner />
     <Menu setOpenFood={setOpenFood} />
     </>
