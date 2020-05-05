@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Navbar} from './Navbar/Navbar';
 import {Banner} from './Banner/Banner';
 import {Menu} from "./Menu/Menu"
@@ -9,6 +9,7 @@ import {useOpenFood} from './Hooks/useOpenFood';
 import {useOrders} from './Hooks/useOrders';
 import {useTitle} from './Hooks/useTitle';
 import {useAuthentication} from './Hooks/useAuthentication';
+
 function App() {
 const openFood = useOpenFood();
 const orders = useOrders();
